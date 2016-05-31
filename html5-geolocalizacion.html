@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocalización</title>
+</head>
+<body>
+    <div>
+        <p>Longitud/latidud: <span id="position"></span></p>
+    </div>
+    <script>
+
+        if (navigator.geolocation) {
+            // getcurrentPosition(funSiDatos, funSiErrorOnoDatos)
+            navigator.geolocation.getCurrentPosition(
+                function (datos) {
+                    var posTxt = datos.coords.latitude + " , " + datos.coords.longitude
+                    document.getElementById("position").innerHTML = posTxt;
+
+                },
+                function() {
+                    console.error("Not Authorized")
+                }
+            );
+        }
+        else {
+            alert("Geolocation not supported");
+        }
+
+    </script>
+</body>
+</html>

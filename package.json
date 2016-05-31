@@ -1,0 +1,22 @@
+{
+  "name": "ejemplos-html5-css3",
+  "version": "1.0.0",
+  "description": "Ejemplos de novedades en HTML5 y CSS3",
+  "main": "html5-web-workers.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akixe/kc_ejemplos_html5_css3.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akixe/kc_ejemplos_html5_css3/issues"
+  },
+  "homepage": "https://github.com/akixe/kc_ejemplos_html5_css3#readme",
+  "devDependencies": {
+    "lite-server": "^2.2.0"
+  }
+}

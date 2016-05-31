@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Workers</title>
+</head>
+<body>
+    <h1>Cuenta atrás</h1>
+    <span id="cuenta">10</span>
+    <script>
+        if (typeof(Worker) !== 'undefined') {
+            alert("comienza la cuenta atrás con Web Workers...")
+            var worker = new Worker("html5-web-workers.js")
+            worker.onmessage = function (event) {
+                if (event.data == 0) {
+                    document.getElementById("cuenta").innerHTML = "<h1>KA-BOOOOOOM</h1>"
+                } else {
+                    document.getElementById("cuenta").innerHTML = event.data;
+                }
+                
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,2 +1,3 @@
-# kc_ejemplos_html5_css3
-Ejemplos de novedades en HTML5 CSS3
+# angularjs-0515-boot3
+
+Repositorio de código con ejemplos del curso Fundamentos de AngularJS.

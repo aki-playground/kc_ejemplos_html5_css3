@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores</title>
+    <style>
+        /* Selecionar por comienzo de un valor de un atributo */
+        a[href^="nov"] { color : red; }
+
+        /* Seleccionar por el final de un valor de un atributo */
+        a[href$="ews"] { text-transform: uppercase; }
+
+        /* Seleccionamos por contenido de valor de atributo */
+        a[href*="tre"] { font-size: 24px; }
+
+        /*  Seleccionamos la primera linea */
+        p::first-line { color : green; }
+
+        /* Seleccionamos texto enfatizado*/
+        p::first-letter { font-size: 40px }
+        
+        /* Seleccionamos texto enfatizado*/
+        p::selection { background: deeppink; color: blue; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#novedades">Novedades</a>
+        <a href="#entrevistas">Entrevistas</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio soluta consectetur facilis incidunt quo! Est harum quam aspernatur quibusdam rem minima accusantium omnis enim eos eveniet! Laudantium sunt ut aspernatur!</p>
+</body>
+</html>
